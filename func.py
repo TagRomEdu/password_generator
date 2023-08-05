@@ -1,3 +1,6 @@
+from random import sample
+
+
 def check_is_num(string: str) -> str:
     """
     To check the string is digit
@@ -24,3 +27,11 @@ def delete_symb(string: str) -> str:
         if letter in string:
             string = string.replace(letter, '')
     return string
+
+
+def generate_password(passw, char, length):
+    """
+    It is generates password
+    """
+    for _ in range(int(passw)):
+        print(*sample(char, int(length)), sep='', end='\n\n')
