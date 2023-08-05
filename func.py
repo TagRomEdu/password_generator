@@ -31,7 +31,7 @@ def delete_symb(string: str) -> str:
 
 def generate_password(passw, char, length):
     """
-    It is generates password
+    It is generating password
     """
     for _ in range(int(passw)):
         print(*sample(char, int(length)), sep='', end='\n\n')
